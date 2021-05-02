@@ -1,0 +1,20 @@
+{
+  "name": "nodejs-cucumberjs-bat",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "cucumber": "./node_modules/.bin/cucumber-js -f node_modules/cucumber-pretty -f json:report/cucumber_report.json ; node index.js",
+    "cucumber-tags": "./node_modules/.bin/cucumber-js --tags $TAGS -f node_modules/cucumber-pretty -f json:report/cucumber_report.json ; node index.js",
+    "test": "./node_modules/.bin/cucumber-js"
+  },
+  "dependencies": {},
+  "author": "Marcos Ribeiro Hioka",
+  "license": "ISC",
+  "devDependencies": {
+    "@harver/bat": "^1.1.1",
+    "cucumber": "^6.0.5",
+    "cucumber-html-reporter": "^5.2.0",
+    "cucumber-pretty": "^6.0.0"
+  }
+}

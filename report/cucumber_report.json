@@ -1,0 +1,852 @@
+[
+  {
+    "description": "    In order to know an address\n    As a brazilian citizen\n    Put a CEP number in cep's route",
+    "keyword": "Feature",
+    "name": "Cep",
+    "line": 2,
+    "id": "cep",
+    "tags": [
+      {
+        "name": "@cep",
+        "line": 1
+      }
+    ],
+    "uri": "features/cep.feature",
+    "elements": [
+      {
+        "id": "cep;get-cep-03613000",
+        "keyword": "Scenario",
+        "line": 10,
+        "name": "Get CEP 03613000",
+        "tags": [
+          {
+            "name": "@cep",
+            "line": 1
+          },
+          {
+            "name": "@cep03613000",
+            "line": 9
+          }
+        ],
+        "type": "scenario",
+        "steps": [
+          {
+            "keyword": "Before",
+            "hidden": true,
+            "match": {
+              "location": "node_modules/@harver/bat/src/world.js:332"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 1000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Given ",
+            "line": 11,
+            "name": "I am anonymous",
+            "match": {
+              "location": "node_modules/@harver/bat/src/steps.js:35"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 1000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "When ",
+            "line": 12,
+            "name": "I send a 'GET' request to 'https://api.postmon.com.br/v1/cep/03613000'",
+            "match": {
+              "location": "node_modules/@harver/bat/src/steps.js:177"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 3000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 13,
+            "name": "I should receive a response with the status 200",
+            "match": {
+              "location": "node_modules/@harver/bat/src/steps.js:406"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 155000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 14,
+            "name": "I should receive a response within 1000ms",
+            "match": {
+              "location": "node_modules/@harver/bat/src/steps.js:424"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 1000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 15,
+            "name": "the response body json path at \"$.logradouro\" should equal \"Rua Enéas de Barros\"",
+            "match": {
+              "location": "node_modules/@harver/bat/src/steps.js:476"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 3000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 16,
+            "name": "the response body json path at \"$.bairro\" should equal \"Vila Santana\"",
+            "match": {
+              "location": "node_modules/@harver/bat/src/steps.js:476"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 1000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 17,
+            "name": "the response body json path at \"$.cidade\" should equal \"São Paulo\"",
+            "match": {
+              "location": "node_modules/@harver/bat/src/steps.js:476"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 1000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 18,
+            "name": "the response body json path at \"$.estado_info.nome\" should equal \"São Paulo\"",
+            "match": {
+              "location": "node_modules/@harver/bat/src/steps.js:476"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 1000000
+            }
+          },
+          {
+            "keyword": "After",
+            "hidden": true,
+            "match": {
+              "location": "node_modules/@harver/bat/src/world.js:333"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 1000000
+            }
+          }
+        ]
+      },
+      {
+        "id": "cep;get-cep-04218040",
+        "keyword": "Scenario",
+        "line": 21,
+        "name": "Get CEP 04218040",
+        "tags": [
+          {
+            "name": "@cep",
+            "line": 1
+          },
+          {
+            "name": "@cep04218040",
+            "line": 20
+          }
+        ],
+        "type": "scenario",
+        "steps": [
+          {
+            "keyword": "Before",
+            "hidden": true,
+            "match": {
+              "location": "node_modules/@harver/bat/src/world.js:332"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 0
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Given ",
+            "line": 22,
+            "name": "I am anonymous",
+            "match": {
+              "location": "node_modules/@harver/bat/src/steps.js:35"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 1000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "When ",
+            "line": 23,
+            "name": "I send a 'GET' request to 'https://api.postmon.com.br/v1/cep/04218040'",
+            "match": {
+              "location": "node_modules/@harver/bat/src/steps.js:177"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 0
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 24,
+            "name": "I should receive a response with the status 200",
+            "match": {
+              "location": "node_modules/@harver/bat/src/steps.js:406"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 122000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 25,
+            "name": "I should receive a response within 1000ms",
+            "match": {
+              "location": "node_modules/@harver/bat/src/steps.js:424"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 1000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 26,
+            "name": "the response body json path at \"$.logradouro\" should equal \"Rua Almirante Mariath\"",
+            "match": {
+              "location": "node_modules/@harver/bat/src/steps.js:476"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 1000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 27,
+            "name": "the response body json path at \"$.bairro\" should equal \"Ipiranga\"",
+            "match": {
+              "location": "node_modules/@harver/bat/src/steps.js:476"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 1000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 28,
+            "name": "the response body json path at \"$.cidade\" should equal \"São Paulo\"",
+            "match": {
+              "location": "node_modules/@harver/bat/src/steps.js:476"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 1000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 29,
+            "name": "the response body json path at \"$.estado_info.nome\" should equal \"São Paulo\"",
+            "match": {
+              "location": "node_modules/@harver/bat/src/steps.js:476"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 0
+            }
+          },
+          {
+            "keyword": "After",
+            "hidden": true,
+            "match": {
+              "location": "node_modules/@harver/bat/src/world.js:333"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 0
+            }
+          }
+        ]
+      },
+      {
+        "id": "cep;get-cep-04248000",
+        "keyword": "Scenario",
+        "line": 32,
+        "name": "Get CEP 04248000",
+        "tags": [
+          {
+            "name": "@cep",
+            "line": 1
+          },
+          {
+            "name": "@cep04248000",
+            "line": 31
+          }
+        ],
+        "type": "scenario",
+        "steps": [
+          {
+            "keyword": "Before",
+            "hidden": true,
+            "match": {
+              "location": "node_modules/@harver/bat/src/world.js:332"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 0
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Given ",
+            "line": 33,
+            "name": "I am anonymous",
+            "match": {
+              "location": "node_modules/@harver/bat/src/steps.js:35"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 1000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "When ",
+            "line": 34,
+            "name": "I send a 'GET' request to 'https://api.postmon.com.br/v1/cep/04248000'",
+            "match": {
+              "location": "node_modules/@harver/bat/src/steps.js:177"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 0
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 35,
+            "name": "I should receive a response with the status 200",
+            "match": {
+              "location": "node_modules/@harver/bat/src/steps.js:406"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 122000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 36,
+            "name": "I should receive a response within 1000ms",
+            "match": {
+              "location": "node_modules/@harver/bat/src/steps.js:424"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 1000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 37,
+            "name": "the response body json path at \"$.logradouro\" should equal \"Rua Salvador Pires de Lima\"",
+            "match": {
+              "location": "node_modules/@harver/bat/src/steps.js:476"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 1000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 38,
+            "name": "the response body json path at \"$.bairro\" should equal \"Sacomã\"",
+            "match": {
+              "location": "node_modules/@harver/bat/src/steps.js:476"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 1000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 39,
+            "name": "the response body json path at \"$.cidade\" should equal \"São Paulo\"",
+            "match": {
+              "location": "node_modules/@harver/bat/src/steps.js:476"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 1000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 40,
+            "name": "the response body json path at \"$.estado_info.nome\" should equal \"São Paulo\"",
+            "match": {
+              "location": "node_modules/@harver/bat/src/steps.js:476"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 1000000
+            }
+          },
+          {
+            "keyword": "After",
+            "hidden": true,
+            "match": {
+              "location": "node_modules/@harver/bat/src/world.js:333"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 1000000
+            }
+          }
+        ]
+      },
+      {
+        "id": "cep;get-cep-03651120",
+        "keyword": "Scenario",
+        "line": 43,
+        "name": "Get CEP 03651120",
+        "tags": [
+          {
+            "name": "@cep",
+            "line": 1
+          },
+          {
+            "name": "@cep03651120",
+            "line": 42
+          }
+        ],
+        "type": "scenario",
+        "steps": [
+          {
+            "keyword": "Before",
+            "hidden": true,
+            "match": {
+              "location": "node_modules/@harver/bat/src/world.js:332"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 0
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Given ",
+            "line": 44,
+            "name": "I am anonymous",
+            "match": {
+              "location": "node_modules/@harver/bat/src/steps.js:35"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 0
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "When ",
+            "line": 45,
+            "name": "I send a 'GET' request to 'https://api.postmon.com.br/v1/cep/03651120'",
+            "match": {
+              "location": "node_modules/@harver/bat/src/steps.js:177"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 0
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 46,
+            "name": "I should receive a response with the status 200",
+            "match": {
+              "location": "node_modules/@harver/bat/src/steps.js:406"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 84000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 47,
+            "name": "I should receive a response within 1000ms",
+            "match": {
+              "location": "node_modules/@harver/bat/src/steps.js:424"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 1000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 48,
+            "name": "the response body json path at \"$.logradouro\" should equal \"Rua Nilza\"",
+            "match": {
+              "location": "node_modules/@harver/bat/src/steps.js:476"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 1000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 49,
+            "name": "the response body json path at \"$.bairro\" should equal \"Vila Esperança\"",
+            "match": {
+              "location": "node_modules/@harver/bat/src/steps.js:476"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 0
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 50,
+            "name": "the response body json path at \"$.cidade\" should equal \"São Paulo\"",
+            "match": {
+              "location": "node_modules/@harver/bat/src/steps.js:476"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 0
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 51,
+            "name": "the response body json path at \"$.estado_info.nome\" should equal \"São Paulo\"",
+            "match": {
+              "location": "node_modules/@harver/bat/src/steps.js:476"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 0
+            }
+          },
+          {
+            "keyword": "After",
+            "hidden": true,
+            "match": {
+              "location": "node_modules/@harver/bat/src/world.js:333"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 0
+            }
+          }
+        ]
+      },
+      {
+        "id": "cep;get-cep-03651050",
+        "keyword": "Scenario",
+        "line": 54,
+        "name": "Get CEP 03651050",
+        "tags": [
+          {
+            "name": "@cep",
+            "line": 1
+          },
+          {
+            "name": "@cep03651050",
+            "line": 53
+          }
+        ],
+        "type": "scenario",
+        "steps": [
+          {
+            "keyword": "Before",
+            "hidden": true,
+            "match": {
+              "location": "node_modules/@harver/bat/src/world.js:332"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 0
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Given ",
+            "line": 55,
+            "name": "I am anonymous",
+            "match": {
+              "location": "node_modules/@harver/bat/src/steps.js:35"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 0
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "When ",
+            "line": 56,
+            "name": "I send a 'GET' request to 'https://api.postmon.com.br/v1/cep/03651050'",
+            "match": {
+              "location": "node_modules/@harver/bat/src/steps.js:177"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 1000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 57,
+            "name": "I should receive a response with the status 200",
+            "match": {
+              "location": "node_modules/@harver/bat/src/steps.js:406"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 128000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 58,
+            "name": "I should receive a response within 1000ms",
+            "match": {
+              "location": "node_modules/@harver/bat/src/steps.js:424"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 1000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 59,
+            "name": "the response body json path at \"$.logradouro\" should equal \"Rua Canguaretama\"",
+            "match": {
+              "location": "node_modules/@harver/bat/src/steps.js:476"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 0
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 60,
+            "name": "the response body json path at \"$.bairro\" should equal \"Vila Esperança\"",
+            "match": {
+              "location": "node_modules/@harver/bat/src/steps.js:476"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 1000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 61,
+            "name": "the response body json path at \"$.cidade\" should equal \"São Paulo\"",
+            "match": {
+              "location": "node_modules/@harver/bat/src/steps.js:476"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 1000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 62,
+            "name": "the response body json path at \"$.estado_info.nome\" should equal \"São Paulo\"",
+            "match": {
+              "location": "node_modules/@harver/bat/src/steps.js:476"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 1000000
+            }
+          },
+          {
+            "keyword": "After",
+            "hidden": true,
+            "match": {
+              "location": "node_modules/@harver/bat/src/world.js:333"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 1000000
+            }
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "description": "    In order to know a food name\n    As a costumer\n    Put a id number in foods route",
+    "keyword": "Feature",
+    "name": "Food",
+    "line": 2,
+    "id": "food",
+    "tags": [
+      {
+        "name": "@foods",
+        "line": 1
+      }
+    ],
+    "uri": "features/foods.feature",
+    "elements": [
+      {
+        "id": "food;get-foods-list",
+        "keyword": "Scenario",
+        "line": 10,
+        "name": "Get Foods list",
+        "tags": [
+          {
+            "name": "@foods",
+            "line": 1
+          },
+          {
+            "name": "@cep03613000",
+            "line": 9
+          }
+        ],
+        "type": "scenario",
+        "steps": [
+          {
+            "keyword": "Before",
+            "hidden": true,
+            "match": {
+              "location": "node_modules/@harver/bat/src/world.js:332"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 0
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Given ",
+            "line": 11,
+            "name": "I am anonymous",
+            "match": {
+              "location": "node_modules/@harver/bat/src/steps.js:35"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 0
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "When ",
+            "line": 12,
+            "name": "I send a 'GET' request to 'https://5f442e5a3fb92f0016753477.mockapi.io/foods/v1/list'",
+            "match": {
+              "location": "node_modules/@harver/bat/src/steps.js:177"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 0
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 13,
+            "name": "I should receive a response with the status 200",
+            "match": {
+              "location": "node_modules/@harver/bat/src/steps.js:406"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 653000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 14,
+            "name": "I should receive a response within 2000ms",
+            "match": {
+              "location": "node_modules/@harver/bat/src/steps.js:424"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 1000000
+            }
+          },
+          {
+            "keyword": "After",
+            "hidden": true,
+            "match": {
+              "location": "node_modules/@harver/bat/src/world.js:333"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 0
+            }
+          }
+        ]
+      }
+    ]
+  }
+]
